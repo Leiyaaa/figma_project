@@ -1,0 +1,153 @@
+
+.page-title {
+    margin-top: 70px;
+    background-color: #e8e9f3;
+    padding: 40px 0;
+}
+
+.page-title h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    font-style: italic;
+}
+
+.contact-info {
+    padding: 80px 0 40px 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    margin-bottom: 80px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.contact-detail {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-detail a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-detail a:hover {
+    color: #3a4a6b;
+}
+
+.contact-detail p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.office-address {
+    text-align: center;
+    padding-top: 50px;
+    border-top: 2px solid #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.office-address h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.address-detail {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.map-section {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    margin: 0;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-bottom: 60px;
+    }
+    
+    .contact-item h3,
+    .office-address h3 {
+        font-size: 22px;
+    }
+    
+    .contact-detail,
+    .address-detail {
+        font-size: 16px;
+    }
+    
+    .page-title h1 {
+        font-size: 24px;
+    }
+    
+    .map-container {
+        height: 350px;
+        border-radius: 10px;
+    }
+    
+    .contact-info {
+        padding: 60px 0 30px 0;
+    }
+    
+    .office-address {
+        padding-top: 40px;
+    }
+} 

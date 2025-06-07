@@ -1,0 +1,139 @@
+
+.page-title {
+    margin-top: 70px;
+    background-color: #e8e9f3;
+    padding: 40px 0;
+}
+
+.page-title h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    font-style: italic;
+}
+
+.hero-banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 0 40px;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-style: italic;
+}
+
+.about-content {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.content-block {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 60px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.intro-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.main-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.closing-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3a4a6b;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 400px;
+    }
+    
+    .hero-content h2 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    .content-block {
+        margin: 0 20px;
+        padding: 40px 30px;
+    }
+    
+    .intro-text,
+    .closing-text {
+        font-size: 18px;
+    }
+    
+    .main-text {
+        font-size: 16px;
+    }
+    
+    .page-title h1 {
+        font-size: 24px;
+    }
+} 
